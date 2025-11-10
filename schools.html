@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect School - EduConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/schools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class=" nav-container">
+            <a href="index.html" class="logo"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  EduConnect</a>
+            <button class="mobile-toggle" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schools.html" class="active">Schools</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="guidence.html">Guidance</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-ghost">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="schools-header">
+        <div class="container">
+            <h1>Find Your Perfect School</h1>
+            <p>Explore hundreds of educational institutions and find the perfect match for your academic journey</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="filters-row">
+                <div class="search-box">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search by school name, location, or program..." class="search-input">
+                </div>
+                <select class="filter-select">
+                    <option value="">Location</option>
+                    <option value="all">All Locations</option>
+                    <option value="kigali">Kigali</option>
+                    <option value="eastern">Eastern Province</option>
+                    <option value="western">Western Province</option>
+                </select>
+                <select class="filter-select">
+                    <option value="">Program Type</option>
+                    <option value="all">All Programs</option>
+                    <option value="computer">Computer Science</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medicine">Medicine</option>
+                </select>
+                <button class="btn-filter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Grid -->
+    <section class="schools-section">
+        <div class="container">
+            <p class="results-count">Showing 6 schools</p>
+            <div class="schools-grid">
+                <!-- School Card 1 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/green hill.PNG" style="height: 200px;" alt=""></div>
+                    <div class="school-content">
+                        <h3>Green Hills Academy</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Green Hills Academy, Kigali</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Computer Science, Engineering +2 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$45,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- School Card 2 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/Riviera.PNG" style="height: 200px;"width="100%"></div>
+                    <div class="school-content">
+                        <h3>Riviera High School</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                           <span>Riviera High School, Kigali</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Business Administration, Finance +2 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$38,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- School Card 3 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/king David.PNG" style="height: 200px;" width="100%"alt=""></div>
+                    <div class="school-content">
+                        <h3>King David Academy</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>King David Academy, Kigali</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Graphic Design, Fine Arts +2 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$35,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- School Card 4 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/ntare.PNG" height="200px" alt=""></div>
+                    <div class="school-content">
+                        <h3>Ntare Louisenlund School</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Ntare Louisenlund School, Eastern Province</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Medicine, Nursing +2 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$52,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- School Card 5 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/Dove.PNG" height="200px" width="100%"alt=""></div>
+                    <div class="school-content">
+                        <h3>Dove International Montessori School</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                           <span>Dove International Montessori School, Kigali</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Mechanical Engineering, Electrical Engineering +1 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$42,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- School Card 6 -->
+                <div class="school-card">
+                    <div class="school-image"><img src="image/two wing.PNG" height="200px" width="100%"></div>
+                    <div class="school-content">
+                        <h3>Education Development Trust</h3>
+                        <p class="school-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Education Development Trust, Kigali</span>
+                        </p>
+                        <div class="school-programs">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Psychology, Sociology +2 more</span>
+                        </div>
+                        <div class="school-tuition">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <span>$36,000/year</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>🎓 EduConnect</h4>
+                    <p>Connecting students with quality education and career opportunities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="schools.html">Schools</a></li>
+                        <li><a href="internships.html">Internships</a></li>
+                        <li><a href="guidance.html">Guidance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                        <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/schools.js"></script>
+</body>
+</html>

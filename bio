@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page </title>
+</head>
+<body>
+    <h1> I do love you </h1><hr>
+    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex architecto dignissimos ea optio corrupti magnam consequatur soluta deserunt delectus, eum neque provident facere.b </strong></p>
+    <ul>
+        <li><a href="https://app.slack.com/client/T061HEH5J6P/C09BDGFC17X">Slack</a></li>
+    </ul>
+    <footer>
+        <p> &copy;sabinIzere</p>2n
+    </footer>
+</body>
+</html>
